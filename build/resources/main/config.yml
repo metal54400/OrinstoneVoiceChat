@@ -1,0 +1,44 @@
+# ╔══════════════════════════════════════════╗
+# ║        OrinStoneVoiceChat Config         ║
+# ╚══════════════════════════════════════════╝
+
+# Prefix utilisé dans tous les messages
+prefix: "&8[&6OrinStone&eVC&8] "
+
+messages:
+  # --- Connexion joueur ---
+  join-has-voicechat: "&7Le joueur &e{player} &7a rejoint avec le Voice Chat activé."
+  join-no-voicechat: "&7Le joueur &e{player} &7a rejoint sans le Voice Chat."
+
+  # --- Mute ---
+  mute-success: "&aLe joueur &e{player} &aa été mute pour &e{duration} &apour la raison : &7{reason}"
+  mute-notify-player: "&cTu as été mute du Voice Chat pour &e{duration}&c. Raison : &7{reason}"
+  mute-already-muted: "&cLe joueur &e{player} &cest déjà mute."
+  mute-expired: "&aLe mute de &e{player} &aa expiré. Il peut de nouveau parler."
+  mute-blocked-action: "&cTu es mute et ne peux pas utiliser le Voice Chat. (&7{reason}&c)"
+
+  # --- Unmute ---
+  unmute-success: "&aLe joueur &e{player} &aa été unmute avec succès."
+  unmute-notify-player: "&aTu as été unmute du Voice Chat. Tu peux de nouveau parler."
+  unmute-not-muted: "&cLe joueur &e{player} &cn'est pas mute."
+
+  # --- Reload ---
+  reload-success: "&aLa configuration a été rechargée avec succès."
+
+  # --- Erreurs ---
+  player-not-found: "&cJoueur introuvable : &e{player}"
+  no-permission: "&cTu n'as pas la permission d'effectuer cette action."
+  invalid-usage-mute: "&cUsage : /originstonevcadmin mute <joueur> <durée> <raison>"
+  invalid-usage-unmute: "&cUsage : /originstonevcadmin unmute <joueur>"
+  invalid-duration: "&cDurée invalide. Exemples : 10s, 5m, 2h, 1d, 1w, 1mo, 1y"
+  console-only-ingame: "&cCette commande doit être exécutée en jeu."
+
+# Format de la durée dans les messages (ex: "2 heures 30 minutes")
+duration-format:
+  seconds: "{value}s"
+  minutes: "{value}m"
+  hours: "{value}h"
+  days: "{value}j"
+  weeks: "{value} semaine(s)"
+  months: "{value} mois"
+  years: "{value} an(s)"

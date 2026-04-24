@@ -1,0 +1,22 @@
+name: OrinStoneVoiceChat
+version: '1.0.0'
+main: fr.wixymc.orinstonevoicechat.OrinStoneVoiceChat
+api-version: '1.21'
+description: Voice chat integration with mute system
+authors: [ WixyMC ]
+depend: [ voicechat, PlaceholderAPI ]
+softdepend: [ voicechat_api ]
+
+commands:
+  originstonevcadmin:
+    description: Commande admin du voice chat
+    usage: /originstonevcadmin <reload|mute|unmute>
+    permission: orinstonevoicechat.admin
+
+permissions:
+  orinstonevoicechat.admin:
+    description: Accès aux commandes admin du voice chat
+    default: op
+  orinstonevoicechat.bypass:
+    description: Bypass le mute voice chat
+    default: false
